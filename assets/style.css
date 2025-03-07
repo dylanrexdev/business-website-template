@@ -5,6 +5,7 @@
     --footer-text-color: #ffffff;
     --link-color: #ffffff;
     --link-hover-color: #ffffff;
+    --menu-bg-color: #3B3B3B;
 
 
 
@@ -37,7 +38,7 @@ body {
     justify-content: space-between;
     height: 8vh;
     align-content: center;
-    padding: 0 1vw;
+    padding: 0 2rem;
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0;
@@ -46,10 +47,16 @@ body {
 }
 
 #menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+    position: sticky;
+    top: 8vh;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 92vh;
+    width: 100%;
+    background-color: var(--menu-bg-color);
+    
 }
 
 #logo {
@@ -58,17 +65,13 @@ body {
 }
 
 .menu-item {
+    font-size: 1.2rem;
     justify-content: center;
     align-content: center;
-    margin: 0 1vw;
-}
-
-#logo {
-    margin:0;
 }
 
 #hero {
-    height: 92vh;
+    height: 62vh;
     width: 100%;
     background-image: url("bg1.jpg");
     justify-content: space-around;
@@ -82,7 +85,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3rem 0 5rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 #copyright {
@@ -98,8 +101,18 @@ body {
 
 }
 
-
-
-@media (width < 1000px) {
-
+#hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 8vh;
+    justify-content: center;
+}
+  
+#line {
+width: 2rem;
+height: .25rem;
+background-color: var(--header-text-color);
+border-radius: 0.5rem;
+margin: 2px 0;
 }
